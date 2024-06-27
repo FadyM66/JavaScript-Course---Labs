@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>            
+            body{
+                height: 2000px;
+            }
+            div, button, a, form *{
+                display: block;
+                margin-left: 20px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            button{
+                display: block;
+                padding: 10px;
+                background-color: white;
+                color: rgb(73, 73, 73);    
+                border: none;
+                transition: 0.5s;
+            }            
+            form{
+                
+                padding: 10px;
+                width: fit-content;
+            }
+            #stopscroller{
+                position: fixed;
+                left: 80%
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="Clock"></div>
+        <button onclick="startClock()">Start Clock</button>
+        <button onclick="stopClock()">Stop Clock</button>
+        <a onclick="Linking()">This is Link</a>
+
+
+
+
+        <form  action="newpage.html" method="get">
+            <input type="text" name="username" placeholder="Enter your user name here">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit">
+        </form>
+
+
+        <button onclick="autoScroll()">Auto Scroller</button>
+        <button onclick="stopScroller()" id="stopscroller">Stop Scrolling</button>
+
+        <button onclick="emailChecker()">Email Checker</button>
+        <button onclick="phoneChecker()">Phone Number Checker</button>
+
+        <script src="index.js"></script>
+    </body>
+</html>
