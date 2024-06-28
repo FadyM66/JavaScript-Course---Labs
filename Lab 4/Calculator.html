@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
+    margin: 20px;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+}
+
+tbody th {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+tbody th:hover {
+    background-color: #f2f2f2;
+}
+
+tbody th[rowspan="3"] {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody th:not([rowspan="3"]) {
+    font-size: 20px;
+    color: #333;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">JavaScript Calculator</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="3">Screen</th>
+                    <th>=</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>+</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>-</th>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>*</th>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <th>0</th>
+                    <th>.</th>
+                    <th>/</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="Calculator.js"></script>
+    </body>
+</html>
