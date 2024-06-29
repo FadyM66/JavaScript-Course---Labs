@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            margin: auto;
+            width: fit-content;
+            top: 100px;
+        }
+        form *{
+            display: block;
+            margin: 10px;
+            padding: 5px;
+        }
+        #rem, label{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <input type="text" id="txtName">
+        <input type="password" id="passwd">
+        <button type="submit" id="login">Login</button>
+    </form>
+    </div>
+    <hr>
+    <div>
+        <form>
+            <input type="text" id="txtName1">
+            <input type="password" id="passwd1">
+            <input type="checkbox" id="rem">
+            <label for="rememberMe">Remember Me</label>
+            <button type="submit" id="login1">Login</button>
+        </form>
+        </div>
+        <hr>
+        <div>
+            <input type="text" id="id" placeholder="Enter Id">
+            <div id="user-data">
+                <p id="p-f"></p>
+                <p id="p-l"></p>
+                <img id="p-i">
+            </div>
+        </div>
+        <hr>
+        <select id="userDropdown">
+            <option value="">Select a user</option>
+        </select>   
+        <div id="userData"></div>
+        
+        <hr>
+
+        <button onclick="validation()">Input Validation</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
