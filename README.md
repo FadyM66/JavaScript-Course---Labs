@@ -4,4 +4,4 @@ Native JavaScript course - Lab answers
 ------------------------------------------------------
 ------------------------------------------------------
 
-supervised by : Eng. Mohammed Gamal
+Labs supervised by : Eng. Mohammed Gamal
