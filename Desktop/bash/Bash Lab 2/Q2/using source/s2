@@ -1,0 +1,8 @@
+
+source s1
+
+# also source could be used using the following:
+# . s1
+
+
+echo "Hi, this is the variable i  ( $i )  from s2 via  >>>> SOURCING <<<<<"

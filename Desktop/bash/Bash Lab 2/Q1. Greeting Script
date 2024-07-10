@@ -1,0 +1,6 @@
+<< comment
+Create a script that asks for user name then send a greeting to him.
+comment
+
+read -p "Enter you name: " name
+echo "Hello $name"

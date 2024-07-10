@@ -1,0 +1,36 @@
+
+#!/bin/bash
+
+command="ls"
+target=${!#}
+
+for item in "${@}"
+do
+    if [[ $item == $target || -d $item ]]
+    then
+        command+=" $item"
+    else
+        if [[ $item == "-l" ]]
+        then
+            command+=" -l"
+        elif [[ $item == "-a" ]]
+        then
+            command+=" -a"
+        elif [[ $item == "-d" ]]
+        then
+            command+=" -d"
+        elif [[ $item == "-i" ]]
+        then
+            command+=" -i"
+        elif [[ $item == "-R" ]]
+        then
+            command+=" -R"
+        else
+            echo "Invalid Input"; echo "Current directory will be listed"; ls;
+        fi
+    fi
+done
+
+$command
+
+

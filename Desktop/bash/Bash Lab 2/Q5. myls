@@ -1,0 +1,15 @@
+
+[[ -d $1 ]] && ls $1 || echo "Invalid dir"; echo "Current directory will be listed"; ls
+
+
+
+<< comment
+
+if [[ -d $1 ]]
+then 
+ls $1
+else
+echo "Invalid dir"; echo "Current directory will be listed"; ls;
+fi
+
+comment

@@ -1,0 +1,20 @@
+
+<< comment
+4. Create a script called mycd where:
+a. It changed directory to the user home directory, if it is called without arguments.
+b. Otherwise, it change directory to the given directory.
+comment
+
+
+# This way replace the subshell which is being used by the script by another
+# new shell then it performs the script cd $1
+
+# normally, cd $1 without exec line, will affect the subshell only, then after finishing
+# the script, it returns into the parent shell which was not affected by the script
+
+
+[[ -d $1 ]] && cd $1 || cd
+
+exec /bin/bash
+
+
